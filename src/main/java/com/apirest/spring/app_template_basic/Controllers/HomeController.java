@@ -11,6 +11,11 @@ public class HomeController {
     @GetMapping("/inicio")
     public String inicio() {
         System.out.println("En ruta :D");
-        return "Hola :D";
+        int numero = numero();
+        return "Hola :D  " + numero;
+    }
+
+    private int numero() {
+        return 49;
     }
 }
