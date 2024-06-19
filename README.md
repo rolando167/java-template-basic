@@ -6,18 +6,17 @@
 
 ## 📌 Feactures
 
- * ✔ One
+ * ✔ [URL](http://localhost:8080/api/v1/inicio)
 
 ## 🌐 Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```c
-#npm 📟
-> npm i
-> npm --version
+#java 📟
+> java --version
 
-> npm ...
+> java ...
 ```
 
 ## 🔰 Running the app
