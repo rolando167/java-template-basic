@@ -2,7 +2,7 @@
 
 # 💎 ☕ Java Base Template - Test Rapido
 
-> BRANCH ▶️ MAIN
+> BRANCH ▶️ basico-2024-v2
 
 ## 📌 Feactures
 
