@@ -26,7 +26,7 @@ public class HomeService implements IHomeService{
         return response;
     }
 
-    public List<?> ordenarAscendiente(List<?> datos){
+    private List<?> ordenarAscendiente(List<?> datos){
         Integer[] arreglo = new Integer[datos.size()];
         arreglo = datos.toArray(arreglo);
 
@@ -44,7 +44,7 @@ public class HomeService implements IHomeService{
         return array;
     }
 
-    public List<?> ordenarDescendente(List<?> datos){
+    private List<?> ordenarDescendente(List<?> datos){
         Integer[] arreglo= new Integer[datos.size()];
         arreglo = datos.toArray(arreglo);
 
