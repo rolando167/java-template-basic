@@ -35,7 +35,17 @@ $ run desde el vscode pra java
 
 ## 📝 Notas
 
-Pull requests are welcome.
+[URL Ordenar Postman](http://localhost:8080/api/v1/ordenar)
+```
+{
+    "England": [
+        8,
+        3,
+        5,
+        6
+    ]
+}
+```
 
 Please make sure to update tests as appropriate.
 
