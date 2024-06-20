@@ -7,6 +7,8 @@
 ## 📌 Feactures
 
  * ✔ [URL](http://localhost:8080/api/v1/inicio)
+ * ✔ Ordenar Burbuja ASC y Des
+ * ✔ 
 
 ## 🌐 Installation
 
@@ -37,6 +39,7 @@ $ run desde el vscode pra java
 
 [URL Ordenar Postman](http://localhost:8080/api/v1/ordenar)
 ```
+#Entrada
 {
     "England": [
         8,
