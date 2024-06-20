@@ -41,12 +41,7 @@ $ run desde el vscode pra java
 ```
 #Entrada
 {
-    "England": [
-        8,
-        3,
-        5,
-        6
-    ]
+   "datos": [8, 3, 5, 6]
 }
 ```
 
