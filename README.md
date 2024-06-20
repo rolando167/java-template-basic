@@ -25,9 +25,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
 # development
-$ run desde el vscode pra java
+$ run desde el vscode para java
 
- 
 ```
 
 ## 📐 Config
