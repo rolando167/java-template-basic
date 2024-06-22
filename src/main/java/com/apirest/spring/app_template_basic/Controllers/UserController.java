@@ -14,16 +14,28 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.apirest.spring.app_template_basic.services.interfaces.IUserService;
 
-/*
-    Creado : RH
-    Fecha : 22/06/2024
-*/
+/**
+ * @author rhidalgo
+ *         Fecha : 22/06/2024
+ *         {@inheritDoc} - http://localhost:8080/api/user
+ */
 
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
+
     @Autowired
     private IUserService userService;
+
+    @GetMapping("/test")
+    public ResponseEntity<?> test() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Content-Type", "application/json; charset=utf-8");
+        return new ResponseEntity<>(
+                "test xD id ",
+                headers, // or null
+                HttpStatus.OK);
+    }
 
     @GetMapping("/all")
     public ResponseEntity<?> finAll() {
@@ -32,13 +44,11 @@ public class UserController {
         return new ResponseEntity<>(genericModelList, HttpStatus.OK);
     }
 
-    @GetMapping("/test")
-    public ResponseEntity<?> test() {
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("Content-Type", "application/json; charset=utf-8");
+    @GetMapping("/find/{id}")
+    public ResponseEntity<?> findById(@PathVariable Integer id) {
         return new ResponseEntity<>(
-                "test xD id "  ,
-                headers, // or null
+                "find id " + id,
+                null,
                 HttpStatus.OK);
     }
 }

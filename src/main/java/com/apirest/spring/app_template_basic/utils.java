@@ -69,7 +69,7 @@ public class utils {
     }
 
     private void getListExample2(){
-        List<String> days = new ArrayList<String>();
+    List<String> days = new ArrayList<String>();
        days.add("Monday");
        days.add("Tuesday");
        days.add("Wednesday");
@@ -77,6 +77,11 @@ public class utils {
        days.add("Friday");
        days.add("Saturday");
        days.add("Sunday");
+       // get()
+       System.out.println("Element at index 1: "+days.get(1));
+       // set() -- change
+       days.set(2, "Miercoles");
+
        // Converting ArrayList to Array
        String[] array = days.toArray(new String[days.size()]);
        System.out.println("Array: "+Arrays.toString(array));
