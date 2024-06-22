@@ -63,7 +63,8 @@ Revisar img basico - 2 .jpg
  * https://www.javatpoint.com/convert-java-object-to-json
  * https://www.ionos.com/digitalguide/websites/web-development/java-list/
  * https://danielme.com/2023/02/22/curso-spring-data-jpa-transacciones-propagacion-excepciones/
- * 
+ * https://github.com/rolando167/java-sprinboot-mysql-adv1
+ * https://github.com/rolando167/java-sprinboot-mysql-adv2
 
 ```
 
