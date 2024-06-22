@@ -17,6 +17,6 @@ public interface IUserService {
     public Users save(UserDto user);
     public Users update(UserDto user, Integer id);
 
-    public void delete(Users user);
+    public void delete(Integer id);
     public boolean existsById(Integer id);
 }

@@ -64,15 +64,27 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public void delete(Users user) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'delete'");
+    public void delete(Integer id) {
+        List<Users> lista = getUsers();
+        for(Users user: lista){
+            if(user.getId() == id){
+                //... Logica eliminar - directo o repository
+                break;
+            }
+        }
     }
 
     @Override
     public boolean existsById(Integer id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'existsById'");
+        List<Users> lista = getUsers();
+        boolean exists = false;
+        for(Users user: lista){
+            if(user.getId() == id){
+                exists = true;
+                break;
+            }
+        }
+        return exists;
     }
 
 }
