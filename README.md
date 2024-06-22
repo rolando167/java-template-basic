@@ -4,6 +4,10 @@
 
 > BRANCH ▶️ basico-2024-v2
 
+> Flujo estructura Crud super basico, Controller, servicio 99%
+
+> faltaimplementar un Repository
+
 ## 📌 Feactures
 
  * ✔ [URL](http://localhost:8080/api/v1/inicio)
