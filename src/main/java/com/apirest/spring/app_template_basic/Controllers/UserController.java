@@ -52,13 +52,25 @@ public class UserController {
 
     @GetMapping("/find/{id}")
     public ResponseEntity<?> findById(@PathVariable Integer id) {
+        try {
+            Users user = userService.findById(id);
 
-        Users user = userService.findById(id);
-
-        return new ResponseEntity<Users>(
-            user,
-            null,
-            HttpStatus.OK);
+            if(user != null){
+                return new ResponseEntity<Users>(
+                    user,
+                    null,
+                    HttpStatus.OK);
+            }else{
+                return new ResponseEntity<>(
+                    "Not Found!!",
+                    null,
+                    HttpStatus.NOT_FOUND);
+            }
+        } catch (Exception e) {
+            return new ResponseEntity<>(
+                e.getMessage(),
+                HttpStatus.OK);
+        }
     }
 
     @PostMapping("create")
