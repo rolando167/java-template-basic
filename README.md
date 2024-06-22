@@ -4,9 +4,9 @@
 
 > BRANCH ▶️ basico-2024-v2
 
-> Flujo estructura Crud super basico, Controller, servicio 99%
+> Flujo estructura Crud super basico, Controller, servicio, DTO, model 99%
 
-> faltaimplementar un Repository
+> falta implementar un Repository
 
 ## 📌 Feactures
 
