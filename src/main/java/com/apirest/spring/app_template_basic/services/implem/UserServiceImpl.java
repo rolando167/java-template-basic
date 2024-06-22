@@ -9,6 +9,7 @@ import com.apirest.spring.app_template_basic.models.dto.UserDto;
 import com.apirest.spring.app_template_basic.models.entities.Users;
 import com.apirest.spring.app_template_basic.services.interfaces.IUserService;
 
+@SuppressWarnings("null")
 @Service
 public class UserServiceImpl implements IUserService {
 
@@ -52,9 +53,16 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public Users save(UserDto user) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'save'");
+    public Users save(UserDto userDTO) {
+        Users users = Users.builder()
+            //.id(null) - depende generado DB
+            .name(userDTO.getName())
+            .lastname(userDTO.getName())
+            .height(userDTO.getHeight())
+            .date_register(new java.util.Date())
+            .build();
+
+        return users;
     }
 
     @Override
