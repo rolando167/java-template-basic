@@ -2,10 +2,13 @@ package com.apirest.spring.app_template_basic.services.implem;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.apirest.spring.app_template_basic.models.dto.UserDto;
 import com.apirest.spring.app_template_basic.models.entities.Users;
 import com.apirest.spring.app_template_basic.services.interfaces.IUserService;
 
+@Service
 public class UserServiceImpl implements IUserService {
 
     @Override

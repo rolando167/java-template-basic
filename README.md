@@ -56,6 +56,7 @@ Please make sure to update tests as appropriate.
 # returns 'words'
  * Spring Boot en Visual Studio Code - Mi Primer API REST en Spring Boot en menos de 5 minutos - YT
  * https://adictosaltrabajo.com/2015/09/17/la-directiva-static-en-java/
+ * https://www.javatpoint.com/convert-java-object-to-json
  * 
 
 ```
