@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.apirest.spring.app_template_basic.models.entities.Users;
 import com.apirest.spring.app_template_basic.services.interfaces.IUserService;
 
 /**
@@ -46,8 +47,11 @@ public class UserController {
 
     @GetMapping("/find/{id}")
     public ResponseEntity<?> findById(@PathVariable Integer id) {
-        return new ResponseEntity<>(
-                "find id " + id,
+
+        Users  users = userService.findById(id);
+
+        return new ResponseEntity<Users>(
+                users,
                 null,
                 HttpStatus.OK);
     }
