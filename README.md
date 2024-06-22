@@ -48,7 +48,7 @@ $ run desde el vscode para java
 }
 ```
 
-Please make sure to update tests as appropriate.
+Revisar img basico - 2 .jpg
 
 ## 🖼 Images
   <img src=main.jpg alt="Main"/>
