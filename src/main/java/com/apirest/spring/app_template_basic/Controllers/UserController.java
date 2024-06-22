@@ -28,26 +28,17 @@ public class UserController {
     @GetMapping("/all")
     public ResponseEntity<?> finAll() {
         List<?> genericModelList = new ArrayList<>();
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("Content-Type", "application/json; charset=utf-8");
-
-        String body = "";
-
-        if (genericModelList.size() == 0) {
-
-        } else {
-
-        }
-
-        return new ResponseEntity<>(genericModelList, headers, HttpStatus.OK);
+        genericModelList = userService.getAll();
+        return new ResponseEntity<>(genericModelList, HttpStatus.OK);
     }
 
     @GetMapping("/test")
     public ResponseEntity<?> test() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Content-Type", "application/json; charset=utf-8");
         return new ResponseEntity<>(
                 "test xD id "  ,
-                null,
+                headers, // or null
                 HttpStatus.OK);
     }
 }

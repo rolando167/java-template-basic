@@ -1,10 +1,20 @@
 package com.apirest.spring.app_template_basic;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 public class utils {
-private int getDataMock(){
+
+    private void examples(){
+        String[] carros = {"Volvo", "BMW", "Ford", "Mazda"};
+        int[] myNum = {10, 20, 30, 40};
+        Object[] usersMock =  new Object[]{4,5};
+
+    }
+
+    private int getDataMock(){
         Object[] usersMock =  new Object[2];
         ArrayList<Object> numbers = new ArrayList<Object>();
         numbers.add(4);
@@ -31,7 +41,7 @@ private int getDataMock(){
         return numbers;
     }
 
-    private void hashMap(){
+    private void getHashMap(){
         HashMap<String, String> capitalCities = new HashMap<String, String>();
         capitalCities.put("England", "London");
         capitalCities.put("Germany", "Berlin");
@@ -46,10 +56,30 @@ private int getDataMock(){
         }
     }
 
-    private void examples(){
-        String[] carros = {"Volvo", "BMW", "Ford", "Mazda"};
-        int[] myNum = {10, 20, 30, 40};
-        Object[] usersMock =  new Object[]{4,5};
+    private void ArrayToList(){
+      // Creating Array
+      String[] colors={"blue","green","red","yellow"};
+      System.out.println("Array: "+Arrays.toString(colors));
+      //Converting Array to List
+      List<String> list=new ArrayList<String>();
+      for(String color: colors){
+        list.add(color);
+      }
+      System.out.println("List: "+list);
+    }
 
+    private void getListExample2(){
+        List<String> days = new ArrayList<String>();
+       days.add("Monday");
+       days.add("Tuesday");
+       days.add("Wednesday");
+       days.add("Thursday");
+       days.add("Friday");
+       days.add("Saturday");
+       days.add("Sunday");
+       // Converting ArrayList to Array
+       String[] array = days.toArray(new String[days.size()]);
+       System.out.println("Array: "+Arrays.toString(array));
+       System.out.println("List: "+days);
     }
 }
