@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,8 +18,8 @@ import com.apirest.spring.app_template_basic.services.interfaces.IUserService;
 
 /**
  * @author rhidalgo
- *         Fecha : 22/06/2024
- *         {@inheritDoc} - http://localhost:8080/api/user
+ * Fecha : 22/06/2024
+ * {@inheritDoc} - http://localhost:8080/api/user
  */
 
 @RestController
@@ -48,11 +49,24 @@ public class UserController {
     @GetMapping("/find/{id}")
     public ResponseEntity<?> findById(@PathVariable Integer id) {
 
-        Users  users = userService.findById(id);
+        Users user = userService.findById(id);
 
         return new ResponseEntity<Users>(
-                users,
+                user,
                 null,
                 HttpStatus.OK);
+    }
+
+    @DeleteMapping("delete/{id}")
+    public ResponseEntity<?> delete(@PathVariable Integer id) {
+        try {
+            Users user = userService.findById(id);
+            userService.delete(id);
+            return new ResponseEntity<>(user, HttpStatus.OK);
+        } catch (Exception exDt) {
+            return new ResponseEntity<>(
+                exDt.getMessage(),
+                HttpStatus.METHOD_NOT_ALLOWED);
+        }
     }
 }
