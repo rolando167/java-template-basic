@@ -13,6 +13,7 @@ public class UserDto  implements Serializable {
     private String lastname;
     private Double height;
     private Date date_register;
+    private Date date_update;
 }
 
 //▶️ user-create-dto, user-list-dto ... multiple fields

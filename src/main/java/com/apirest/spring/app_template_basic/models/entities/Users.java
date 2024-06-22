@@ -1,9 +1,6 @@
 package com.apirest.spring.app_template_basic.models.entities;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-
 import lombok.*;
 
 @AllArgsConstructor
@@ -20,5 +17,6 @@ public class Users implements Serializable{
     private String lastname;
     private Double height;
     private Date date_register;
+    private Date date_update;
     // private List<Product> productList = new ArrayList<>();
 }

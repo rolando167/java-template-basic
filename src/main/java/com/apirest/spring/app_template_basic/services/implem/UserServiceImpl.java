@@ -52,6 +52,7 @@ public class UserServiceImpl implements IUserService {
         return usuario;
     }
 
+    // @Transactional
     @Override
     public Users save(UserDto userDTO) {
         Users users = Users.builder()
@@ -61,14 +62,26 @@ public class UserServiceImpl implements IUserService {
             .height(userDTO.getHeight())
             .date_register(new java.util.Date())
             .build();
+        // save logic ...
 
         return users;
     }
 
     @Override
-    public Users update(UserDto user, Integer id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'update'");
+    public Users update(UserDto userDTO, Integer id) {
+        Users users = null;
+        if(existsById(id)){
+            users = Users.builder()
+                //.id(id)
+                .name(userDTO.getName())
+                .lastname(userDTO.getName())
+                .height(userDTO.getHeight())
+                .date_update(new java.util.Date())
+                .build();
+            // Update logic ...
+        }
+
+        return users;
     }
 
     @Override

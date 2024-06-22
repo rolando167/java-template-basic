@@ -73,7 +73,7 @@ public class UserController {
     @PutMapping("update/{id}")
     public ResponseEntity<?> update(@RequestBody UserDto userDto, @PathVariable Integer id) {
 
-        Users user = userService.save(userDto);
+        Users user = userService.update(userDto, id);
 
         return new ResponseEntity<>(
             user,
