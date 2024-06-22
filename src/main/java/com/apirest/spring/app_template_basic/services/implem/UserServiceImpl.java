@@ -12,9 +12,8 @@ import com.apirest.spring.app_template_basic.services.interfaces.IUserService;
 @Service
 public class UserServiceImpl implements IUserService {
 
-    @Override
-    public List<Users> getAll() {
 
+    private List<Users> getUsers(){
         Users user1 = new Users();
         user1.setId(1);
         user1.setName("Luis");
@@ -22,17 +21,19 @@ public class UserServiceImpl implements IUserService {
         user1.setDate_register(new java.util.Date());
 
         Users user2 = new Users();
-        user1.setId(2);
-        user1.setName("Lola");
-        user1.setLastname("Toyota");
-        user1.setDate_register(new java.util.Date());
-
+        user2.setId(2);
+        user2.setName("Lola");
+        user2.setLastname("Toyota");
+        user2.setDate_register(new java.util.Date());
         List<Users> lista = new ArrayList<Users>();
         lista.add(user1);
         lista.add(user2);
-
-
         return lista ;
+    }
+
+    @Override
+    public List<Users> getAll() {
+        return getUsers();
     }
 
     @Override
