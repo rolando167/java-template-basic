@@ -58,6 +58,7 @@ Please make sure to update tests as appropriate.
  * https://adictosaltrabajo.com/2015/09/17/la-directiva-static-en-java/
  * https://www.javatpoint.com/convert-java-object-to-json
  * https://www.ionos.com/digitalguide/websites/web-development/java-list/
+ * https://danielme.com/2023/02/22/curso-spring-data-jpa-transacciones-propagacion-excepciones/
  * 
 
 ```
