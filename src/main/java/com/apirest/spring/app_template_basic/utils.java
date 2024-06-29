@@ -91,4 +91,13 @@ public class utils {
              System.out.println(letter);
         }
     }
+
+
+    public static void sortListInteger() {
+        List<Integer> numbers = Arrays.asList(5, 3, 2, 4, 1);
+        numbers.sort(null);
+        System.out.println(numbers); // prints [1, 2, 3, 4, 5]
+    }
+
+    
 }
