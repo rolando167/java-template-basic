@@ -65,7 +65,7 @@ Revisar img basico - 2 .jpg
  * https://danielme.com/2023/02/22/curso-spring-data-jpa-transacciones-propagacion-excepciones/
  * https://github.com/rolando167/java-sprinboot-mysql-adv1
  * https://github.com/rolando167/java-sprinboot-mysql-adv2
- * 
+ * https://stackoverflow.com/questions/61919703/java-version-gives-1-8-0-even-though-java-home-is-pointing-on-c-program-files
 
 ```
 
