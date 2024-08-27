@@ -48,7 +48,7 @@ public class utils {
 
         // capitalCities.get("England");
         // capitalCities.remove("England");
-        // capitalCities.clear();
+        // capitalCities.clear(); ca
 
         // Print keys and values
         for (String i : capitalCities.keySet()) {
