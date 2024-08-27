@@ -1,6 +1,6 @@
 
 
-# 💎 ☕ Java Base Template - Test Rapido - 2024
+# 💎 ☕ Java Base Template - Test Rapido
 
 > BRANCH ▶️ basico-2024-v2
 
